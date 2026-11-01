@@ -22,7 +22,7 @@
 
 <body>
 
-    <!-- PART 1: Top bar, navigation, intro and status steps -->
+    <!-- Top bar, navigation, intro-->
 
     <div class="topline">
         <div class="container d-flex justify-content-between align-items-center">
@@ -109,7 +109,7 @@
             </div>
         </section>
 
-        <!-- PART 2: Student registration form and status card -->
+        <!-- Form 1 -->
 
         <section class="form-section">
             <div class="container">
@@ -218,4 +218,253 @@
 
                 </div>
             </div>
+        </section>        
+
+        <!--- Form 2 --->
+        <section class="listing-section">
+            <div class="container">
+                <p class="label-small">02 / Prepare your listing</p>
+                <h2 class="section-heading">Pass it on, with all the details.</h2>
+                <p class="section-note">Illustrative private draft below. Save your work while pending; publishing
+                    unlocks only after current-student approval.</p>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-8">
+                        <form class="form-card" id="listingForm" action="#" method="post">
+                            <div class="card-top">
+                                <h3>Item details</h3>
+                                <span class="draft-pill">Private draft · Not published</span>
+                            </div>
+
+                            <div class="row g-3">
+                                <div class="col-12 field">
+                                    <label for="itemTitle" class="required">Item title</label>
+                                    <input type="text" id="itemTitle" name="itemTitle"
+                                        placeholder="e.g. Arduino Uno starter kit" value="Arduino Uno starter kit"
+                                        minlength="5" maxlength="80" required>
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="category" class="required">Category</label>
+                                    <select id="category" name="category" required>
+                                        <option>Textbooks</option>
+                                        <option>Academic tools</option>
+                                        <option>Lab equipment</option>
+                                        <option>Drawing supplies</option>
+                                        <option selected>Electronics kits</option>
+                                        <option>Robotics</option>
+                                        <option>Computer accessories</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="condition" class="required">Condition</label>
+                                    <select id="condition" name="condition" required>
+                                        <option selected>Like new</option>
+                                        <option>Good</option>
+                                        <option>Fair</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 field">
+                                    <label for="description" class="required">Description</label>
+                                    <textarea id="description" name="description" rows="3"
+                                        placeholder="Describe the item" minlength="30" maxlength="400"
+                                        required>Arduino Uno-compatible board with breadboard and jumper wires. Tested and working. Lightly used for one semester project. No power adapter included.</textarea>
+                                    <p class="hint">Describe the model, included parts, defects and testing honestly.
+                                    </p>
+                                </div>
+
+                                <div class="col-12 field">
+                                    <span class="field-title required">Item photos</span>
+                                    <label class="photo-drop" for="photos">
+                                        <!-- IMAGE: same photo as the Arduino card on the home page -->
+                                        <img src="images/arduino-kit.jpg"
+                                            alt="Sample photo of an Arduino Uno starter kit" class="photo-thumb">
+                                        <span class="photo-copy">
+                                            <span class="add-photos"><i class="bi bi-upload"></i> Add photos</span>
+                                            <small>1 sample photo added · Up to 5 JPG or PNG images, 5 MB each. Show the
+                                                actual item, accessories and any wear.</small>
+                                        </span>
+                                        <input type="file" id="photos" name="photos" class="visually-hidden"
+                                            accept="image/png, image/jpeg" multiple required>
+                                    </label>
+                                </div>
+
+                                <div class="col-12 field">
+                                    <span class="field-title required">Transaction type</span>
+                                    <div class="radio-row" role="radiogroup" aria-label="Transaction type">
+                                        <label class="radio-card">
+                                            <input type="radio" name="transaction" value="sell" checked>
+                                            <span class="radio-body"><strong>Sell</strong><small>Buyer
+                                                    purchases</small></span>
+                                        </label>
+                                        <label class="radio-card">
+                                            <input type="radio" name="transaction" value="rent">
+                                            <span class="radio-body"><strong>Rent out</strong><small>Charge for a
+                                                    period</small></span>
+                                        </label>
+                                        <label class="radio-card">
+                                            <input type="radio" name="transaction" value="lend">
+                                            <span class="radio-body"><strong>Lend for free</strong><small>Student
+                                                    borrows</small></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="price" class="required">Price / rental fee (PKR)</label>
+                                    <input type="number" id="price" name="price" placeholder="0" value="2800" min="0"
+                                        max="500000" step="50" required>
+                                    <p class="hint">One-time sale price. Free loans must be PKR 0.</p>
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="deposit">Refundable deposit (PKR)</label>
+                                    <input type="number" id="deposit" name="deposit" placeholder="0" value="0" min="0"
+                                        max="100000" readonly>
+                                    <p class="hint">For rentals or loans only. Never included in the fee.</p>
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="availability" class="required">Availability</label>
+                                    <select id="availability" name="availability" required>
+                                        <option selected>Available (when published)</option>
+                                        <option>Available from a set date</option>
+                                        <option>Temporarily unavailable</option>
+                                    </select>
+                                    <p class="hint">Drafts are never visible in Explore Items.</p>
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="duration">Rental / loan duration</label>
+                                    <input type="range" id="duration" name="duration" min="1" max="14" value="7"
+                                        disabled>
+                                    <p class="hint">Not applicable — sale selected. For rentals or loans, set dates and
+                                        duration here.</p>
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="availableFrom">Available from</label>
+                                    <input type="date" id="availableFrom" name="availableFrom" min="2026-10-31"
+                                        max="2027-06-30">
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="handoverTime">Preferred handover time</label>
+                                    <input type="time" id="handoverTime" name="handoverTime" min="08:00" max="18:00">
+                                    <p class="hint">Campus hours, 8:00 am to 6:00 pm.</p>
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="itemColour">Item colour</label>
+                                    <input type="color" id="itemColour" name="itemColour" value="#2159ff">
+                                </div>
+
+                                <div class="col-md-6 field">
+                                    <label for="refLink">Reference link</label>
+                                    <input type="url" id="refLink" name="refLink" placeholder="https://" maxlength="200"
+                                        pattern="https?://.+">
+                                    <p class="hint">Optional. A product page that shows the model.</p>
+                                </div>
+
+                                <div class="col-12 field">
+                                    <label for="handoverNotes">Handover / return notes</label>
+                                    <textarea id="handoverNotes" name="handoverNotes" rows="3"
+                                        placeholder="Where and how you will hand over the item"
+                                        maxlength="200">Meet in a busy, permitted campus area. Test the board and check all included parts together before payment.</textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="check-row" for="ownsItem">
+                                        <input type="checkbox" id="ownsItem" name="ownsItem" required>
+                                        <span>I own this item or have permission to offer it, and the description and
+                                            photos accurately represent its condition. *</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn-ghost"><i class="bi bi-save"></i> Save private
+                                    draft</button>
+                                <button type="button" class="btn-locked" disabled>Publish after verification <i
+                                        class="bi bi-lock"></i></button>
+                            </div>
+                            <p class="lock-note">Publishing is locked in the pending state. Approval plus complete
+                                required fields makes the listing eligible to publish.</p>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <aside class="tips-card">
+                            <i class="bi bi-stars"></i>
+                            <h3>Make a listing you’d trust.</h3>
+                            <ul>
+                                <li>Use a clear title and your own photos.</li>
+                                <li>List every included part and known fault.</li>
+                                <li>Set a fair price and clear availability.</li>
+                                <li>Keep IDs and private details out of photos.</li>
+                                <li>Offer only legal, permitted academic gear.</li>
+                            </ul>
+                        </aside>
+
+                        <a class="guide-link" href="media.html">
+                            <i class="bi bi-book"></i>
+                            <span>Read the Exchange Guide before your first handover.</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </section>
+
+    </main>
+    
+    <footer class="page-foot">
+        <div class="container">
+            <div class="row gy-5">
+
+                <div class="col-lg-4">
+                    <a class="brand-link brand-on-dark" href="index.html">
+                        <span class="brand-icon"><i class="bi bi-arrow-repeat"></i></span>
+                        <span class="brand-word">UniLoop</span>
+                    </a>
+                    <p class="foot-copy">Good gear deserves another semester. Buy, sell, rent, borrow and lend within
+                        your campus community.</p>
+                    <span class="foot-badge">Exclusively for UCP Lahore</span>
+                </div>
+
+                <div class="col-lg-5">
+                    <h4 class="foot-title">Find your way</h4>
+                    <ul class="foot-nav">
+                        <li><a href="index.html">Home<small>index.html</small></a></li>
+                        <li><a href="media.html">Exchange Guide<small>media.html</small></a></li>
+                        <li><a href="register.html">Register / List Item<small>register.html</small></a></li>
+                        <li><a href="services.html">Categories<small>services.html</small></a></li>
+                        <li><a href="portfolio.html">Explore Items<small>portfolio.html</small></a></li>
+                        <li><a href="contact.html">Savings &amp; Contact<small>contact.html</small></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="foot-safe">
+                        <i class="bi bi-shield-check"></i>
+                        <h4>Keep it on campus.</h4>
+                        <p>Meet in a busy, permitted campus space. Inspect first. Agree on terms before paying.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="foot-end">
+                <span>© 2026 UniLoop · Independent student marketplace concept.</span>
+                <span>Not an official UCP service or university endorsement.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
