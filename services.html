@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UniLoop | Categories</title>
+    <meta name="description"
+        content="Browse seven categories of academic gear and project hardware shared between UCP Lahore students.">
+
+    <!-- Fonts, Bootstrap and Bootstrap Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/services.css">
+</head>
+
+<body>
+
+    <!-- PART 1: Top bar, navigation and hero -->
+
+    <div class="ribbon">
+        <div class="container ribbon-inner">
+            <span class="ribbon-left">UCP Lahore · Student to student</span>
+            <span class="ribbon-right">Less spending. More making. One campus loop.</span>
+        </div>
+    </div>
+
+    <header class="nav-bar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand mark-link" href="index.html">
+                    <span class="mark-icon"><i class="bi bi-arrow-repeat"></i></span>
+                    <span class="mark-word">UniLoop</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="media.html">Exchange Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register / List Item</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="services.html">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Explore Items</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Savings &amp; Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow">Seven categories. One campus loop.</p>
+                    <h1 class="hero-title">Every semester has its essentials.</h1>
+                    <p class="hero-lead">Find the books, tools and project hardware you need. Pass along what you no
+                        longer use. There’s a place for both here.</p>
+                </div>
+                <aside class="hero-card">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <p>Buy for the semester. Rent for the project. Borrow for the moment.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- PART 2: Category cards (flexbox card list) -->
+
+        <section class="browse">
+            <div class="container">
+
+                <div class="browse-head">
+                    <h2 class="browse-title">Browse all 7 categories</h2>
+                    <span class="mode-pill">Buy · Sell · Rent · Borrow</span>
+                </div>
+
+                <ul class="card-list">
+
+                    <li class="cat-card">
+                        <div class="cat-media">
+                            <span class="cat-badge"><i class="bi bi-book"></i></span>                            
+                            <img src="images/Textbook.png" alt="Notebooks and textbooks stacked on a desk"
+                                class="cat-img">
+                        </div>
+                        <div class="cat-body">
+                            <h3 class="cat-title">Textbooks</h3>
+                            <p class="cat-text">The right edition for your next semester, without the brand-new price
+                                tag.</p>
+                            <p class="cat-tags">Engineering · Business · Computing</p>
+                            <p class="cat-check">Check edition, syllabus and page condition.</p>
+                            <a href="portfolio.html" class="cat-link">Browse textbooks <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </li>
+
+                    <li class="cat-card">
+                        <div class="cat-media">
+                            <span class="cat-badge"><i class="bi bi-droplet-half"></i></span>                            
+                            <img src="images/Lab-eq.png"
+                                alt="White lab coat and safety goggles on a lab bench" class="cat-img">
+                        </div>
+                        <div class="cat-body">
+                            <h3 class="cat-title">Lab equipment</h3>
+                            <p class="cat-text">Gear up for practical sessions with clean, reusable essentials that fit.
+                            </p>
+                            <p class="cat-tags">Lab coats · Goggles · Basic tools</p>
+                            <p class="cat-check">Check cleanliness, sizing and lab suitability.</p>
+                            <a href="portfolio.html" class="cat-link">Browse lab equipment <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </li>
+
+                    <li class="cat-card">
+                        <div class="cat-media">
+                            <span class="cat-badge"><i class="bi bi-cpu"></i></span>                            
+                            <img src="images/Electronic.png" alt="Arduino board connected to a breadboard"
+                                class="cat-img">
+                        </div>
+                        <div class="cat-body">
+                            <h3 class="cat-title">Electronics kits</h3>
+                            <p class="cat-text">Prototype smarter. Find the boards and components your project needs.
+                            </p>
+                            <p class="cat-tags">Arduino · Raspberry Pi · Sensors</p>
+                            <p class="cat-check">Test boards and verify included accessories.</p>
+                            <a href="portfolio.html" class="cat-link">Browse electronics kits <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </li> 
