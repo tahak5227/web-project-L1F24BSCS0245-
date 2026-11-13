@@ -361,3 +361,304 @@ a {
 .cat-link:hover i {
   transform: translate(3px, -3px);
 }
+
+/* =========================================================
+   PART 3: Call-to-action card and "own it" section
+   ========================================================= */
+
+.cta-card {
+  display: flex;
+  flex: 1 1 20rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.6rem 3rem;
+  color: var(--white);
+  background-color: var(--deep);
+  background-image: linear-gradient(135deg, #0b1f43 0%, #12306a 100%);
+  border-radius: var(--round-lg);
+}
+.cta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.6rem;
+  color: var(--mint-ink);
+  background: var(--mint);
+  border-radius: 14px;
+}
+.cta-eyebrow {
+  margin-bottom: 1rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c9d4ea;
+}
+.cta-title {
+  margin-bottom: 1.2rem;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.cta-text {
+  max-width: 38rem;
+  margin-bottom: 1.6rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #c9d4ea;
+}
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.3rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--white);
+  border-radius: var(--round-sm);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.cta-btn:hover {
+  color: var(--accent-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+}
+
+.modes {
+  padding: 3rem 0 4rem;
+}
+.modes-title {
+  margin-bottom: 1.6rem;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.mode-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.mode-card {
+  flex: 1 1 16rem;
+  padding: 1.3rem 1.5rem;
+  background: var(--soft);
+  border-radius: var(--round-md);
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+.mode-card:hover {
+  transform: translateY(-4px);
+  background: var(--wash);
+}
+.mode-top {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+.mode-top i {
+  font-size: 1.15rem;
+  color: var(--accent);
+}
+.mode-top h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.mode-card p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.modes-note {
+  margin: 1.8rem 0 0;
+  font-size: 0.68rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* =========================================================
+   PART 4: Footer and responsive rules
+   ========================================================= */
+
+.site-foot {
+  padding: 3rem 0 1.5rem;
+  color: var(--white);
+  background: var(--deep);
+}
+.foot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.foot-brand {
+  flex: 1 1 18rem;
+  max-width: 22rem;
+}
+.foot-links {
+  flex: 2 1 26rem;
+}
+.foot-safe {
+  flex: 1 1 14rem;
+  max-width: 17rem;
+}
+
+.mark-light,
+.mark-light:hover {
+  color: var(--white);
+}
+.mark-light .mark-icon {
+  color: var(--deep);
+  background: var(--mint);
+}
+.foot-brand p {
+  margin: 1rem 0;
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: #c0cadf;
+}
+.foot-badge {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--mint-ink);
+  background: var(--mint);
+  border-radius: 999px;
+}
+
+.foot-links h4 {
+  margin-bottom: 1rem;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a8b4cb;
+}
+.foot-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.foot-links li {
+  flex: 0 0 33.333%;
+}
+.foot-links a {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--white);
+  transition: color 0.2s ease;
+}
+.foot-links a:hover {
+  color: #9db8ff;
+}
+.foot-links small {
+  font-size: 0.62rem;
+  font-weight: 400;
+  color: #8491aa;
+}
+
+.foot-safe i {
+  font-size: 1.1rem;
+  color: var(--mint);
+}
+.foot-safe h4 {
+  margin: 0.6rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.foot-safe p {
+  margin: 0;
+  font-size: 0.74rem;
+  line-height: 1.65;
+  color: #c0cadf;
+}
+
+.foot-end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  font-size: 0.64rem;
+  color: #8491aa;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Responsive: tablet */
+@media (max-width: 991.98px) {
+  .nav-bar .nav-link {
+    margin-left: 0;
+    padding: 0.6rem 0;
+  }
+  .nav-bar .nav-link::after {
+    display: none;
+  }
+  .ribbon-right {
+    display: none;
+  }
+  .hero {
+    padding: 2.6rem 0;
+  }
+  .hero-card {
+    flex: 1 1 100%;
+  }
+  .cat-card {
+    flex: 0 0 calc((100% - 1.5rem) / 2);
+  }
+  .cat-card:nth-child(7) {
+    flex: 1 1 calc((100% - 1.5rem) / 2);
+  }
+  .cta-card {
+    flex: 1 1 100%;
+    padding: 2rem 1.8rem;
+  }
+}
+
+/* Responsive: phone */
+@media (max-width: 575.98px) {
+  .cat-card,
+  .cat-card:nth-child(7) {
+    flex: 0 0 100%;
+  }
+  .cat-media {
+    height: 12rem;
+  }
+  .foot-links li {
+    flex: 0 0 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+  .cat-card:hover,
+  .mode-card:hover,
+  .cta-btn:hover {
+    transform: none;
+  }
+}
