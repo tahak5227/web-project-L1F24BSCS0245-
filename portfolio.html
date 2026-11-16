@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UniLoop | Explore Items</title>
+    <meta name="description" content="Browse academic essentials and project hardware offered by UCP Lahore students.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+
+    <!-- PART 1: Top bar, navigation, hero, search and tabs   -->
+
+    <div class="strip-top">
+        <div class="container strip-inner">
+            <span class="strip-left">UCP Lahore · Student to student</span>
+            <span class="strip-right">Less spending. More making. One campus loop.</span>
+        </div>
+    </div>
+
+    <header class="site-nav">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand logo-link" href="index.html">
+                    <span class="logo-icon"><i class="bi bi-arrow-repeat"></i></span>
+                    <span class="logo-word">UniLoop</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="media.html">Exchange Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Register / List Item</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="portfolio.html">Explore Items</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Savings &amp; Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">Your next campus find</p>
+                <h1 class="hero-title">Less searching. More finding.</h1>
+                <p class="hero-lead">Books for the semester. Hardware for the demo. Browse academic essentials offered
+                    by your campus community.</p>
+            </div>
+        </section>
+
+        <section class="finder">
+            <div class="container">
+                <form class="search-bar" action="portfolio.html" role="search">
+                    <i class="bi bi-search"></i>
+                    <input type="search" name="q" placeholder="Search items, categories or project essentials…"
+                        aria-label="Search items">
+                    <button type="submit">Search</button>
+                </form>
+
+                <div class="tab-row">
+                    <ul class="tabs">
+                        <li><a href="portfolio.html" class="tab is-active" aria-current="true">All items
+                                <span>5</span></a></li>
+                        <li><a href="portfolio.html" class="tab">Buy <span>3</span></a></li>
+                        <li><a href="portfolio.html" class="tab">Rent <span>2</span></a></li>
+                        <li><a href="portfolio.html" class="tab">Borrow <span>0</span></a></li>
+                    </ul>
+                    <a href="register.html" class="btn-line">Sell, rent out or lend <i class="bi bi-plus-lg"></i></a>
+                </div>
+
+                <!-- PART 2: Filters sidebar (grid area: filters)  -->
+
+                <div class="catalog">
+
+                    <aside class="filters" aria-label="Filters">
+                        <form action="portfolio.html" method="get">
+                            <div class="filters-top">
+                                <h2>Filters</h2>
+                                <button type="reset" class="reset-link">Reset</button>
+                            </div>
+
+                            <fieldset class="filter-group">
+                                <legend>Category</legend>
+                                <label class="opt"><input type="checkbox" name="category" checked><span
+                                        class="is-all">All categories</span><em>3</em></label>
+                                <label class="opt"><input type="checkbox"
+                                        name="category"><span>Textbooks</span><em>1</em></label>
+                                <label class="opt"><input type="checkbox" name="category"><span>Academic
+                                        tools</span><em>2</em></label>                                                                
+                                <label class="opt"><input type="checkbox" name="category"><span>Electronics
+                                        kits</span><em>2</em></label>                                
+                            </fieldset>
+
+                            <fieldset class="filter-group">
+                                <legend>Condition</legend>
+                                <label class="opt"><input type="checkbox" name="condition" checked><span
+                                        class="is-all">Any condition</span></label>
+                                <label class="opt"><input type="checkbox" name="condition"><span>Like
+                                        new</span><em>3</em></label>
+                                <label class="opt"><input type="checkbox"
+                                        name="condition"><span>Good</span><em>2</em></label>
+                                <label class="opt"><input type="checkbox"
+                                        name="condition"><span>Fair</span><em>0</em></label>
+                            </fieldset>
+
+                            <fieldset class="filter-group">
+                                <legend>Price / fee (PKR)</legend>
+                                <label class="num-label" for="minPrice">Minimum</label>
+                                <input type="number" id="minPrice" name="minPrice" placeholder="0" min="0">
+                                <label class="num-label" for="maxPrice">Maximum</label>
+                                <input type="number" id="maxPrice" name="maxPrice" placeholder="Any amount" min="0">
+                                <p class="filter-hint">One-time price or 7-day rental fee. Free loans are PKR 0.
+                                    Deposits excluded.</p>
+                            </fieldset>
+
+                            <fieldset class="filter-group">
+                                <legend>Availability</legend>
+                                <label class="opt"><input type="checkbox" name="status" checked><span class="is-all">All
+                                        statuses</span></label>
+                                <label class="opt"><input type="checkbox"
+                                        name="status"><span>Available</span><em>2</em></label>
+                                <label class="opt"><input type="checkbox"
+                                        name="status"><span>Reserved</span><em>3</em></label>
+                                <label class="opt"><input type="checkbox"
+                                        name="status"><span>Rented</span><em>0</em></label>
+                            </fieldset>
+
+                            <button type="submit" class="apply-btn">Apply filters <i class="bi bi-sliders"></i></button>
+                            <p class="filter-foot">Static filter layout. The sample gallery below shows all nine items.
+                            </p>
+                        </form>
+                    </aside>
