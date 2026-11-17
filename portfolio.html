@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UniLoop | Explore Items</title>
     <meta name="description" content="Browse academic essentials and project hardware offered by UCP Lahore students.">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -104,9 +104,9 @@
                                 <label class="opt"><input type="checkbox"
                                         name="category"><span>Textbooks</span><em>1</em></label>
                                 <label class="opt"><input type="checkbox" name="category"><span>Academic
-                                        tools</span><em>2</em></label>                                                                
+                                        tools</span><em>2</em></label>
                                 <label class="opt"><input type="checkbox" name="category"><span>Electronics
-                                        kits</span><em>2</em></label>                                
+                                        kits</span><em>2</em></label>
                             </fieldset>
 
                             <fieldset class="filter-group">
@@ -148,3 +148,220 @@
                             </p>
                         </form>
                     </aside>
+
+                    <!-- PART 3: Results header and image gallery with captions -->
+
+                    <div class="results-head">
+                        <div>
+                            <h2>Campus finds</h2>
+                            <p>Illustrative inventory · all prices in PKR</p>
+                        </div>
+                        <label class="sort-box">
+                            <span class="visually-hidden">Sort items</span>
+                            <select name="sort">
+                                <option selected>Sort: Recommended</option>
+                                <option>Price: low to high</option>
+                                <option>Price: high to low</option>
+                                <option>Newest first</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="gallery">
+
+                        <figure class="item">
+                            <div class="item-photo">
+                                <span class="status status-available">Available</span>                                
+                                <img src="images/1arduino.png" alt="Arduino Uno board wired to a breadboard"
+                                    class="item-img">
+                            </div>
+                            <figcaption class="item-caption">
+                                <div class="item-meta">
+                                    <span class="item-cat">Electronics kits</span>
+                                    <span class="item-type type-buy"><i class="bi bi-arrow-up-right"></i> Buy</span>
+                                </div>
+                                <h3 class="item-title">Arduino Uno starter kit</h3>
+                                <p class="item-line">Like new condition</p>
+                                <p class="item-line">Board, breadboard + jumper wires</p>
+                                <hr class="item-rule">
+                                <p class="item-price">PKR 2,800</p>
+                                <p class="item-note">One-time purchase</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item">
+                            <div class="item-photo">
+                                <span class="status status-available">Available</span>
+                                <img src="images/item-books.jpg" alt="Engineering Mathematics textbook with notebook"
+                                    class="item-img">
+                            </div>
+                            <figcaption class="item-caption">
+                                <div class="item-meta">
+                                    <span class="item-cat">Textbooks</span>
+                                    <span class="item-type type-buy"><i class="bi bi-arrow-up-right"></i> Buy</span>
+                                </div>
+                                <h3 class="item-title">Engineering Mathematics</h3>
+                                <p class="item-line">Good condition</p>
+                                <p class="item-line">Print edition · light annotations</p>
+                                <hr class="item-rule">
+                                <p class="item-price">PKR 1,800</p>
+                                <p class="item-note">One-time purchase</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item">
+                            <div class="item-photo">
+                                <span class="status status-available">Available</span>
+                                <img src="images/item-notes.jpg" alt="Handwritten circuit analysis notes in a notebook"
+                                    class="item-img">
+                            </div>
+                            <figcaption class="item-caption">
+                                <div class="item-meta">
+                                    <span class="item-cat">Academic tools</span>
+                                    <span class="item-type type-borrow"><i class="bi bi-arrow-left-right"></i>
+                                        Borrow</span>
+                                </div>
+                                <h3 class="item-title">Circuit analysis notes</h3>
+                                <p class="item-line">Good condition</p>
+                                <p class="item-line">Original student-written notes</p>
+                                <hr class="item-rule">
+                                <p class="item-price">Free</p>
+                                <p class="item-note">7 days · no deposit</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item">
+                            <div class="item-photo">
+                                <span class="status status-available">Available</span>
+                                <img src="images/item-lab-coat.jpg" alt="White lab coat with safety goggles"
+                                    class="item-img">
+                            </div>
+                            <figcaption class="item-caption">
+                                <div class="item-meta">
+                                    <span class="item-cat">Lab equipment</span>
+                                    <span class="item-type type-buy"><i class="bi bi-arrow-up-right"></i> Buy</span>
+                                </div>
+                                <h3 class="item-title">Lab coat · medium</h3>
+                                <p class="item-line">Good condition</p>
+                                <p class="item-line">Clean cotton coat · goggles included</p>
+                                <hr class="item-rule">
+                                <p class="item-price">PKR 900</p>
+                                <p class="item-note">One-time purchase</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item">
+                            <div class="item-photo">
+                                <span class="status status-available">Available</span>
+                                <img src="images/item-robot-kit.jpg" alt="Two-wheel-drive robot car kit with sensor"
+                                    class="item-img">
+                            </div>
+                            <figcaption class="item-caption">
+                                <div class="item-meta">
+                                    <span class="item-cat">Robotics</span>
+                                    <span class="item-type type-rent"><i class="bi bi-clock"></i> Rent</span>
+                                </div>
+                                <h3 class="item-title">2WD robotics project kit</h3>
+                                <p class="item-line">Good condition</p>
+                                <p class="item-line">Chassis, motors + distance sensor</p>
+                                <hr class="item-rule">
+                                <p class="item-price">PKR 900</p>
+                                <p class="item-note">/ 7 days · PKR 2,500 deposit</p>
+                            </figcaption>
+                        </figure>                        
+                    </div>
+
+                    <nav class="pager" aria-label="Pagination">
+                        <span>Showing 1–9 of 9 sample items</span>
+                        <a href="portfolio.html" class="page-btn" aria-current="page">1</a>
+                    </nav>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PART 4: Status legend, call to action and footer  -->
+
+        <section class="legend-wrap">
+            <div class="container">
+                <div class="legend">
+                    <div class="legend-item"><span class="status status-available">Available</span>
+                        <p>Open to an exchange request.</p>
+                    </div>
+                    <div class="legend-item"><span class="status status-reserved">Reserved</span>
+                        <p>A handover is being arranged.</p>
+                    </div>
+                    <div class="legend-item"><span class="status status-rented">Rented</span>
+                        <p>Currently on loan; not available now.</p>
+                    </div>
+                </div>
+                <p class="legend-note">Buy listings are offered for sale; Rent listings are offered by owners for a fee;
+                    Borrow listings are free loans offered by student lenders. All sample rentals and loans last 7 days.
+                    Refundable deposits are separate from fees. Only approved current UCP Lahore students can arrange an
+                    exchange.</p>
+            </div>
+        </section>
+
+        <section class="cta-wrap">
+            <div class="container">
+                <div class="cta-band">
+                    <div class="cta-copy">
+                        <h2>Have something another student needs?</h2>
+                        <p>Sell a book, rent out your project kit or lend your original notes. Keep useful gear moving
+                            around campus.</p>
+                    </div>
+                    <div class="cta-side">
+                        <a href="register.html" class="cta-btn">Register / List Item <i
+                                class="bi bi-arrow-up-right"></i></a>
+                        <span>Read the Exchange Guide before meeting</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-foot">
+        <div class="container">
+            <div class="foot-grid">
+
+                <div class="foot-brand">
+                    <a class="logo-link logo-light" href="index.html">
+                        <span class="logo-icon"><i class="bi bi-arrow-repeat"></i></span>
+                        <span class="logo-word">UniLoop</span>
+                    </a>
+                    <p>Good gear deserves another semester. Buy, sell, rent, borrow and lend within your campus
+                        community.</p>
+                    <span class="foot-badge">Exclusively for UCP Lahore</span>
+                </div>
+
+                <div class="foot-links">
+                    <h4>Find your way</h4>
+                    <ul>
+                        <li><a href="index.html">Home<small>index.html</small></a></li>
+                        <li><a href="media.html">Exchange Guide<small>media.html</small></a></li>
+                        <li><a href="register.html">Register / List Item<small>register.html</small></a></li>
+                        <li><a href="services.html">Categories<small>services.html</small></a></li>
+                        <li><a href="portfolio.html">Explore Items<small>portfolio.html</small></a></li>
+                        <li><a href="contact.html">Savings &amp; Contact<small>contact.html</small></a></li>
+                    </ul>
+                </div>
+
+                <div class="foot-safe">
+                    <i class="bi bi-shield-check"></i>
+                    <h4>Keep it on campus.</h4>
+                    <p>Meet in a busy, permitted campus space. Inspect first. Agree on terms before paying.</p>
+                </div>
+
+            </div>
+
+            <div class="foot-end">
+                <span>© 2026 UniLoop · Independent student marketplace concept.</span>
+                <span>Not an official UCP service or university endorsement.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
