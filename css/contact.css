@@ -16,7 +16,6 @@
   --sand-ink: #8a5a00;
   --white: #fff;
   --r-xl: 22px;
-  --r-lg: 14px;
   --r-md: 10px;
 }
 
@@ -304,7 +303,6 @@ a {
 }
 input[type="text"],
 input[type="email"],
-input[type="number"],
 select,
 textarea {
   width: 100%;
@@ -601,12 +599,6 @@ textarea:focus {
 
 /* Breakpoint 1: small laptops and tablets landscape */
 @media (max-width: 1199.98px) {
-  .calc-grid {
-    grid-template-columns: minmax(0, 20rem) 1fr;
-  }
-  .trio {
-    grid-template-columns: 1fr;
-  }
   .end-grid {
     grid-template-columns: 1fr 1.4fr;
   }
@@ -630,12 +622,8 @@ textarea:focus {
   .about-inner {
     gap: 2rem;
   }
-  .calc-grid,
   .contact-grid {
     grid-template-columns: 1fr;
-  }
-  .trio {
-    grid-template-columns: repeat(3, 1fr);
   }
   .block {
     padding: 3rem 0;
@@ -647,18 +635,11 @@ textarea:focus {
   .about-img {
     height: 16rem;
   }
-  .trio {
-    grid-template-columns: 1fr;
-  }
   .form-grid {
     grid-template-columns: 1fr;
   }
   .contact-card {
     padding: 1.3rem;
-  }
-  .field-pair {
-    grid-template-columns: 1fr;
-    gap: 0;
   }
   .end-grid {
     grid-template-columns: 1fr;
@@ -672,7 +653,6 @@ textarea:focus {
   * {
     transition: none !important;
   }
-  .result:hover,
   .btn-main:hover {
     transform: none;
   }
